@@ -12,6 +12,17 @@ Dalam proses pencarian data pada metode ini data akan di bagi menjadi dua bagian
 - Apabila data lebih kecil, maka proses pencarian yang dicari dengan posisi akhir adalah posisi tengah – 1 
 - Jika data sama dengan data yang di cari, berarti  data tersebut telah ketemu.
 
+## Contoh 
+Misal terdapat array A dengan total N elemen yang datanya telah terurut secara menaik. (x adalah nilai yang dicari)
+Maka:
+- Array tersebut akan dipenggal pada indeks ke- k, dimana k=N+1 div 2.
+- Sekarang array telah terbagi dua yaitu dari A[1]..A[k-1] dan A[k+1]..A[N], sedangkan A[k] menjadi pembatas.
+- Jika x (nilai yang dicari) = A[k] maka hentikan pencarian
+- Jika tidak, maka periksa:
+  - Jika A[k]>x maka lakukan pencarian untuk A[1]..A[k-1].
+  - Jika A[k]<x maka lakukan pencarian untuk A[k+1]..A[N].
+
+
 ## Screenshot
 ![Screenshot (3)](https://user-images.githubusercontent.com/91766087/229853200-e128ea21-2508-427c-a13a-078d582aca18.png)
 
